@@ -1,6 +1,7 @@
 """Calculator functions
 """
 
+
 def add(x, y):
     """_summary_
 
@@ -13,6 +14,7 @@ def add(x, y):
     """
     return x + y
 
+
 def subtract(x, y):
     """Subtract
 
@@ -23,4 +25,4 @@ def subtract(x, y):
     Returns:
         _type_: _description_
     """
-    return x-y
+    return x - y
