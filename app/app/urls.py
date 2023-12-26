@@ -23,13 +23,13 @@ from django.contrib import admin
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(
-        'v1/schema/',
-        SpectacularAPIView.as_view(api_version='v1'),
+        'api/schema/',
+        SpectacularAPIView.as_view(),
         name='api-schema',
     ),
     path(
         'api/docs/',
-        SpectacularSwaggerView.as_view(),
+        SpectacularSwaggerView.as_view(url_name='api-schema'),
         name='api-docs',
     )
 ]
