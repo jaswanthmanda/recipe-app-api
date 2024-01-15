@@ -36,7 +36,7 @@ def detail_url(recipe_id):
 
 def image_upload_url(recipe_id):
     """Create and return a recipe detail URL."""
-    return reverse('recipe:image-detail', args=[recipe_id])
+    return reverse('recipe:recipe-upload-image', args=[recipe_id])
 
 
 def create_recipe(user, **params):
